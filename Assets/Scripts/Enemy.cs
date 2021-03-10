@@ -25,6 +25,11 @@ public class Enemy : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
     }
+    private void Update()
+    {
+        MoveDown();
+        Move();
+    }
 
     void OnCollisionEnter2D(Collision2D collision)
     {
@@ -73,9 +78,4 @@ public class Enemy : MonoBehaviour
         Instantiate(bullet,CurrentPosition,transform.rotation);
     }
     
-    private void Update()
-    {
-        MoveDown();
-        Move();
-    }
 }

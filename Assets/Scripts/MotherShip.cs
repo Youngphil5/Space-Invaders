@@ -88,28 +88,6 @@ public class MotherShip : MonoBehaviour
         }
     }
 
-    void Report(String tag)
-    {
-        switch (tag)
-        {
-            case "EnemyType1" :
-                points.awardPoint(tag);
-                break;
-            case "EnemyType2" :
-                points.awardPoint(tag);
-                break;
-            case "EnemyType3" :
-                points.awardPoint(tag);
-                break;
-            case "EnemyType4" :
-                points.awardPoint(tag);
-                break;
-            default:
-                break;
-        }
-
-    }
-
     IEnumerator Fire()
     {
         while (deathCount !=4)
